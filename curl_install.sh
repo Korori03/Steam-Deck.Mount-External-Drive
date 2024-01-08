@@ -19,7 +19,7 @@ service_install_dir="/etc/systemd/system"
 script_install_dir="/home/deck/.local/share/scawp/SDMED"
 
 device_name="$(uname --nodename)"
-user="$(id -u deck)"
+user="$(id -u steamdeck)"
 
 if [ "$device_name" != "steamdeck" ] || [ "$user" != "1000" ]; then
   zenity --question --width=400 \
