@@ -125,7 +125,7 @@ do_mount()
                 /org/freedesktop/UDisks2/block_devices/"${DEVBASE}"                                \
                 org.freedesktop.UDisks2.Filesystem                                                 \
                 Mount 'a{sv}' 3                                                                    \
-                  as-user s deck                                                                   \
+                  as-user s steamdeck                                                                   \
                   auth.no_user_interaction b true                                                  \
                   options                  s "$OPTS") || ret=$?
 
@@ -172,7 +172,7 @@ do_mount()
     else
         #TODO check permissions are 1000  when creating new SteamLibrary
         mkdir -p "${mount_point}/SteamLibrary"
-        chown deck:deck "${mount_point}/SteamLibrary"
+        chown steamdeck:steamdeck "${mount_point}/SteamLibrary"
         send_steam_url "addlibraryfolder" "${mount_point}/SteamLibrary"
     fi
 }
