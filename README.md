@@ -1,3 +1,6 @@
+
+Had to add a different username to fix mine.
+
 # Steam-Deck.Mount-External-Drive 3.5
 Script to Auto-Mount NTFS, BTRFS & exFat SDCards, External USB Drives (or SSD Docks) & Internal Partitions (If you Dual-Boot) on the Steam Deck
 
